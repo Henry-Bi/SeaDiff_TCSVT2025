@@ -50,7 +50,5 @@ If you find our work useful, please cite:
 Our code is based on [DocDiff](https://github.com/Royalvice/DocDiff), [HistoGAN](https://github.com/mahmoudnafifi/HistoGAN/tree/master) and [Depth Anything](https://github.com/jiaowoguanren0615/DepthAnythingV2). We thank the authors for their excellent work!
 
 If you have any questions, please don't hesitate to open an issue or contact Hengyue Bi at [bihengyue@stu.ouc.edu.cn](mailto:bihengyue@stu.ouc.edu.cn). 🤞🤞🤞
-  
-```
 
 
