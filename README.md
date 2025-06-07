@@ -51,4 +51,3 @@ Our code is based on [DocDiff](https://github.com/Royalvice/DocDiff), [HistoGAN]
 
 If you have any questions, please don't hesitate to open an issue or contact Hengyue Bi at [bihengyue@stu.ouc.edu.cn](mailto:bihengyue@stu.ouc.edu.cn). 🤞🤞🤞
 
-
