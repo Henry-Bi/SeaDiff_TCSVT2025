@@ -17,10 +17,10 @@ This is the official repository for the paper 📄 **"SeaDiff: Underwater Image 
 ## 🛠️ Environment Setup
 
 ### Prerequisites
-- Python >= 3.8
-- PyTorch >= 1.7.0
-- torchvision >= 0.8.0
-- CUDA >= 10.2 (recommended)
+- Python = 3.9
+- PyTorch = 2.0.0
+- torchvision = 0.15.1
+- CUDA = 11.7
 
 ### Installation
 ```bash
