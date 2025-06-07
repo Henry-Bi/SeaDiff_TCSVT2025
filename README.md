@@ -1,29 +1,57 @@
 # SeaDiff: Underwater Image Enhancement with Degradation-Aware Diffusion Model
 
-This is the official repository for the paper [SeaDiff: Underwater Image Enhancement with Degradation-Aware Diffusion Model].
+<div align="center">
 
-# News
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.7.0+-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- 2025.06.12: The initial version of the code is uploaded.
+</div>
 
-## Environment
+This is the official repository for the paper 📄 **"SeaDiff: Underwater Image Enhancement with Degradation-Aware Diffusion Model"**.
 
-- python >= 3.8
-- pytorch >= 1.7.0
+## 🔥 News
+- **2025.06.12**: The initial version of the code is uploaded.
+
+
+## 🛠️ Environment Setup
+
+### Prerequisites
+- Python >= 3.8
+- PyTorch >= 1.7.0
 - torchvision >= 0.8.0
+- CUDA >= 10.2 (recommended)
 
-## Dataset Preparation
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/SeaDiff.git
+cd SeaDiff
 
-To train SeaDiff, you should: 
+# Create conda environment
+conda create -n seadiff python=3.8
+conda activate seadiff
+```
 
-1. Download the UIE datasets.
+## 📂 Dataset Preparation
 
-2. Then use [Depth Anything](https://github.com/DepthAnything/Depth-Anything-V2) to estimate monocular depth maps.
+To train SeaDiff, please follow these steps:
 
-3. Third, use utils/create_hist_sample.py to estimate histogram representations.
+1. **Download UIE datasets**: 
+   - [UIEB](https://li-chongyi.github.io/proj_benchmark.html)
+   - [EUVP](http://irvlab.cs.umn.edu/resources/euvp-dataset)
+   - [SUIM-E]([https://github.com/zhihefang/UFO-120](https://github.com/trentqq/SUIM-E))
 
-After preprocessing, our folder structure is as follows:
-```shell
+2. **Generate depth maps** using [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2):
+
+3. **Create histogram representations**:
+   ```bash
+   python utils/create_hist_sample.py --input_dir datasets/UIEB/train/input --output_dir datasets/UIEB/train/histo
+   ```
+
+### Dataset Structure
+After preprocessing, organize your data as follows:
+```
 datasets/
 └── UIEB/
     ├── train/
@@ -38,18 +66,51 @@ datasets/
         └── histo/
 ```
 
+## 🚀 Quick Start
 
-## 🌟 Training and 🎇 Testing
+### Training
+1. Modify the configuration in `conf.yml`:
+   ```yaml
+   MODE: 1                    # 1 for training, 0 for inference
+   PRE_ORI: 'True'            # True for $x_0$, False for $\epsilon$
+   # ... other parameters
+   ```
 
-Whether it's for training or inference, you just need to modify the configuration parameters in `conf.yml` and run `main.py`. MODE=1 is for training, MODE=0 is for inference.
+2. Start training:
+   ```bash
+   python main.py
+   ```
 
+## 🏗️ Model Architecture
+
+<div align="center">
+<img src="assets/architecture.png" width="600"/>
+<p><em>Overview of SeaDiff architecture</em></p>
+</div>
 
 ## 📜 Citation
 
 If you find our work useful, please cite:
 
+
 ## 🤝 Acknowledgements
-Our code is based on [DocDiff](https://github.com/Royalvice/DocDiff), [HistoGAN](https://github.com/mahmoudnafifi/HistoGAN/tree/master) and [Depth Anything](https://github.com/jiaowoguanren0615/DepthAnythingV2). We thank the authors for their excellent work!
 
-If you have any questions, please don't hesitate to open an issue or contact Hengyue Bi at [bihengyue@stu.ouc.edu.cn](mailto:bihengyue@stu.ouc.edu.cn). 🤞🤞🤞
+Our code is based on the following excellent works:
+- [DocDiff](https://github.com/Royalvice/DocDiff)
+- [HistoGAN](https://github.com/mahmoudnafifi/HistoGAN/tree/master) 
+- [Depth Anything V2](https://github.com/jiaowoguanren0615/DepthAnythingV2)
 
+We thank the authors for their outstanding contributions! 🙏
+
+## 📧 Contact
+
+If you have any questions, please feel free to:
+- 📧 Email: [bihengyue@stu.ouc.edu.cn](mailto:bihengyue@stu.ouc.edu.cn)
+- 🐛 Open an [Issue](https://github.com/yourusername/SeaDiff/issues)
+- 💬 Start a [Discussion](https://github.com/yourusername/SeaDiff/discussions)
+
+---
+
+<div align="center">
+⭐ If you find this project helpful, please consider giving it a star! ⭐
+</div>
