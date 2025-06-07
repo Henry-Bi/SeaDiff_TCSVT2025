@@ -14,11 +14,13 @@ This is the official repository for the paper [SeaDiff: Underwater Image Enhance
 
 ## Dataset Preparation
 
-To train SeaDiff, you should download the UIE datasets.
+To train SeaDiff, you should: 
 
-Then use [Depth Anything](https://github.com/DepthAnything/Depth-Anything-V2) to estimate monocular depth maps.
+1. Download the UIE datasets.
 
-Third, use utils/create_hist_sample.py to estimate histogram representations.
+2. Then use [Depth Anything](https://github.com/DepthAnything/Depth-Anything-V2) to estimate monocular depth maps.
+
+3. Third, use utils/create_hist_sample.py to estimate histogram representations.
 
 After preprocessing, our folder structure is as follows:
 ```shell
