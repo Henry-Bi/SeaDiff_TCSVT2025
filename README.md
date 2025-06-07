@@ -40,7 +40,7 @@ To train SeaDiff, please follow these steps:
 1. **Download UIE datasets**: 
    - [UIEB](https://li-chongyi.github.io/proj_benchmark.html)
    - [EUVP](http://irvlab.cs.umn.edu/resources/euvp-dataset)
-   - [SUIM-E]([https://github.com/zhihefang/UFO-120](https://github.com/trentqq/SUIM-E))
+   - [SUIM-E](https://github.com/trentqq/SUIM-E)
 
 2. **Generate depth maps** using [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2):
 
