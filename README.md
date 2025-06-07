@@ -1,4 +1,4 @@
-# SeaDiff: Underwater Image Enhancement with Degradation-Aware Diffusion Model
+# SeaDiff
 
 <div align="center">
 
@@ -106,8 +106,8 @@ We thank the authors for their outstanding contributions! 🙏
 
 If you have any questions, please feel free to:
 - 📧 Email: [bihengyue@stu.ouc.edu.cn](mailto:bihengyue@stu.ouc.edu.cn)
-- 🐛 Open an [Issue](https://github.com/yourusername/SeaDiff/issues)
-- 💬 Start a [Discussion](https://github.com/yourusername/SeaDiff/discussions)
+- 🐛 Open an [Issue](https://github.com/Henry-Bi/SeaDiff/issues)
+- 💬 Start a [Discussion](https://github.com/Henry-Bi/SeaDiff/discussions)
 
 ---
 
