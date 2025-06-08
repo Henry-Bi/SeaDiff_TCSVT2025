@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.7.0+-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
-<img src="https://api.infinitescript.com/badgen/count?name=henry-bi/SeaDiff">
 
 </div>
 
