@@ -68,7 +68,7 @@ datasets/
 
 ## 🚀 Quick Start
 
-### Training
+### Training or Testing
 1. Modify the configuration in `conf.yml`:
    ```yaml
    MODE: 1                    # 1 for training, 0 for inference
@@ -76,9 +76,9 @@ datasets/
    # ... other parameters
    ```
 
-2. Start training:
+2. Start:
    ```bash
-   python main.py
+   python main.py --conf conf.yml
    ```
 
 ## 🏗️ Model Architecture
