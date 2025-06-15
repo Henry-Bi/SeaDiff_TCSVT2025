@@ -1,0 +1,54 @@
+# model
+IMAGE_SIZE : [336, 336]         # load image size, if it's train mode, it will be randomly cropped to IMAGE_SIZE. If it's test mode, it will be resized to IMAGE_SIZE.
+CHANNEL_X : 3                   # input channel
+CHANNEL_Y : 3                   # output channel
+TIMESTEPS : 1000                # diffusion steps
+SCHEDULE : 'linear'             # linear or cosine
+MODEL_CHANNELS : 32             # basic channels of Unet
+NUM_RESBLOCKS : 1               # number of residual blocks
+CHANNEL_MULT : [1,2,3,4]        # channel multiplier of each layer
+NUM_HEADS : 1
+DPT_PRETRAINED_WEIGHT: ' '      # path of the pretrained weight of Depth Anything model
+MODE : 1                        # 1 Train, 0 Test
+PRE_ORI : 'True'                # if True, predict $x_0$, else predict $\epsilon$.
+
+# train
+PATH_IMG : ' '                  # path of input
+PATH_GT : ' '                   # path of ground truth
+PATH_GT_DEPTH : ' '             # path of depth
+PATH_IMG_HIST: ' '              # path of histogram
+BATCH_SIZE : 3                  # training batch size
+NUM_WORKERS : 0                 # number of workers
+ITERATION_MAX : 400000          # max training iteration
+LR : 0.0001                     # learning rate
+LOSS : 'L2'                     # L1 or L2
+EMA_EVERY : 100                 # update EMA every EMA_EVERY iterations
+START_EMA : 2000                # start EMA after START_EMA iterations
+SAVE_MODEL_EVERY : 50000        # save model every SAVE_MODEL_EVERY iterations
+EMA: 'False'                    # if True, use EMA
+CONTINUE_TRAINING : 'False'     # if True, continue training
+CONTINUE_TRAINING_STEPS :       # continue training from CONTINUE_TRAINING_STEPS
+
+PRETRAINED_PATH_BETA_PREDICTOR: ' '
+PRETRAINED_PATH_DEPTH_ESTIMATOR : ' '            
+PRETRAINED_PATH_DENOISER: ' '
+
+WEIGHT_SAVE_PATH : ' '          # path to save model
+TRAIN_PATH : ' '                # path of training data
+BETA_LOSS : 50                  # hyperparameter to balance the pixel loss and the diffusion loss
+HIGH_LOW_FREQ : 'False'         # if True, training with frequency separation
+OUTPUT_DIR: ' '
+
+# test
+NATIVE_RESOLUTION : 'False'      # if True, test with native resolution
+DPM_SOLVER : 'False'             # if True, test with DPM_solver
+DPM_STEP : 20                    # DPM_solver step
+BATCH_SIZE_VAL : 1               # test batch size
+PATH_TEST_IMG : ' '              # path of input
+PATH_TEST_GT : ' '               # path of ground truth
+PATH_TEST_GT_DEPTH : ' '         # path of depth
+PATH_TEST_IMG_HIST: ' '          # path of histogram
+
+TEST_PATH : ' '                  # path to save results
+VIS_PATH: ' '                    # path to save results
+
