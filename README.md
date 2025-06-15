@@ -11,7 +11,7 @@
 This is the official repository for the paper 📄 **"SeaDiff: Underwater Image Enhancement with Degradation-Aware Diffusion Model"**.
 
 ## 🔥 News
-- **2025.06.12**: The initial version of the code is uploaded.
+- **2025.06.15**: The initial version of the code is uploaded.
 
 
 ## 🛠️ Environment Setup
