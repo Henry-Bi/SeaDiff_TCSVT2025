@@ -81,13 +81,6 @@ datasets/
    python main.py --conf conf.yml
    ```
 
-## 🏗️ Model Architecture
-
-<div align="center">
-<img src="assets/architecture.png" width="600"/>
-<p><em>Overview of SeaDiff architecture</em></p>
-</div>
-
 ## 📜 Citation
 
 If you find our work useful, please cite:
