@@ -84,6 +84,18 @@ datasets/
 ## 📜 Citation
 
 If you find our work useful, please cite:
+```
+@ARTICLE{11062889,
+  author={Bi, Hengyue and Chen, Long and Cao, Jingchao and Wang, Jingyang and Sun, Jinghao and Rao, Yuan and Dong, Junyu},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={SeaDiff: Underwater Image Enhancement with Degradation-Aware Diffusion Model}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Image color analysis;Diffusion models;Degradation;Training;Imaging;Adaptation models;Image enhancement;Histograms;Feature extraction;Data mining;Underwater image enhancement;conditional diffusion models;prior knowledge},
+  doi={10.1109/TCSVT.2025.3585429}}
+```
 
 
 ## 🤝 Acknowledgements
